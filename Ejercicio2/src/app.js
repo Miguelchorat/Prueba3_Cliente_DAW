@@ -9,7 +9,7 @@ const NUM_MIN = 2001
  * @type {number}
  */
 const NUM_MAX = 2500
-
+let parrafo = document.getElementById("info")
 /**
      * @property {function} isLeapYear - Función que calculara de dos numeros entre 2001 y 2500 sus años bisiestos
      * 
@@ -63,7 +63,7 @@ let anyos = isLeapYear(2200,2405)
 //Comprobara que los años no sea nulo y luego procedera a mostrar por consola los numeros bisiestos entre los números dados.
 if(anyos!=null){
     for(let a of anyos){
-        console.log(a)
+        parrafo.innerText += a + ","
     }
 }
 
@@ -73,7 +73,7 @@ anyos = isLeapYear(1900,2405)
 //Comprobara que los años no sea nulo y luego procedera a mostrar por consola los numeros bisiestos entre los números dados.
 if(anyos!=null){
     for(let a of anyos){
-        console.log(a)
+        parrafo.innerText += a + ","
     }
 }
 
@@ -83,7 +83,7 @@ anyos = isLeapYear(2001,2505)
 //Comprobara que los años no sea nulo y luego procedera a mostrar por consola los numeros bisiestos entre los números dados.
 if(anyos!=null){
     for(let a of anyos){
-        console.log(a)
+        parrafo.innerText += a + ","
     }
 }
 
@@ -94,6 +94,6 @@ anyos = isLeapYear(2500,2001)
 //Comprobara que los años no sea nulo y luego procedera a mostrar por consola los numeros bisiestos entre los números dados.
 if(anyos!=null){
     for(let a of anyos){
-        console.log(a)
+        parrafo.innerText += a + ","
     }
 }
